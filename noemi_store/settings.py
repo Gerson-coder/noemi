@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'noemi_store.wsgi.application'
 DATABASES = {
     'default': {  # Base de datos principal
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'noemi_store',  # Nombre de la base de datos
-        'USER': 'root',        # Usuario de PostgreSQL
-        'PASSWORD': '10443313', # Contraseña del usuario
-        'HOST': 'localhost',         # Servidor de la base de datos (localhost o IP)
+        'NAME': 'beloved1_products',  # Nombre de la base de datos
+        'USER': 'beloved1_admin',       
+        'PASSWORD': '10443313Astro', # Contraseña del usuario
+        'HOST': '161.97.81.10',         # Servidor de la base de datos (localhost o IP)
         'PORT': '3306',              # Puerto por defecto de PostgreSQL
     }
 }
@@ -125,6 +125,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
